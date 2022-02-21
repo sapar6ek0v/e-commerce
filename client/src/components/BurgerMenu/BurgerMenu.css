@@ -1,0 +1,62 @@
+.burger-menu-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+.burger-menu {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: 25%;
+    background: #e51e25;
+    padding: 30px 40px;
+    border-radius: 0 0 10px 10px;
+}
+.burger-menu-btn {
+    color: #fafef6;
+    background: #E1332D ;
+    border: 1px solid #fafef6 ;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all 150ms linear;
+}
+.burger-menu-btn:hover {
+    border: 1px solid transparent;
+    transition: all 250ms linear;
+}
+.burger-menu-title {
+    color: white;
+    font-size: 25px;
+    font-family: 'Lobster', cursive;
+    margin-bottom: 10px;
+}
+.burger-menu-input {
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 4px 8px;
+    font-size: 16px;
+    color: #e51e25;
+    font-weight: bold;
+    background: white ;
+}
+.burger-menu-input:focus {
+    outline: none;
+}
+.show-enter {
+    opacity: 0;
+}
+.show-enter-active {
+    opacity: 1;
+    transition: all 400ms linear;
+}
+.show-exit {
+    opacity: 1;
+}
+.show-exit-active {
+    opacity: 0;
+    transition: all 400ms linear;
+}

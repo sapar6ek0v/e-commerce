@@ -1,0 +1,60 @@
+@media (max-width: 1200px) {
+    .burger-menu {
+        width: 35%!important;
+    }
+}
+
+@media (max-width: 992px) {
+    .burger-menu {
+        width: 40%!important;
+    }
+    .cart-img {
+        width: 85% !important;
+    }
+    .md-table {
+        text-align: center;
+    }
+    .meal-card-btn{
+        margin: 20px 0 ;
+    }
+    .cart-table-btn {
+        margin-left: 0!important;
+    }
+    .cart-table-price {
+        margin: 20px 0!important;
+    }
+}
+@media (max-width: 768px) {
+    .burger-menu {
+        width: 50% !important;
+    }
+    .cart-table-btn {
+        margin: 20px auto 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .burger-menu {
+        padding: 30px 25px!important;
+    }
+    .burger-menu-input {
+        width: 85%;
+    }
+    .m-col {
+        flex: 0 0 auto;
+    }
+    .buttons {
+        padding: 0 0 20px;
+    }
+    .cart-table-btn {
+        margin: 15px auto 0;
+    }
+}
+@media (max-width: 480px) {
+    .meal-card-title {
+        width: 140px;
+    }
+    .cart-table-btn {
+        margin: 13px auto 0;
+    }
+}

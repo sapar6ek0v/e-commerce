@@ -1,0 +1,15 @@
+footer {
+    background: #e51e25;
+    text-align: center;
+    padding: 20px 0;
+    color: #fafef6;
+}
+footer:after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    background: #fafef6;
+    color: #fafef6;
+    flex-grow: 1;
+}

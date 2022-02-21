@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Neonderthaw&display=swap');
+
+
+.cart-table-head {
+    background: #e51e25;
+    color: #fafef6;
+    font-weight: bold;
+}
+
+.cart-page {
+    padding: 50px 0;
+}
+.cart-table-foot {
+    background: #e51e25;
+    color: #fafef6;
+}
+.cart-table-foot-btn {
+    border: 2px solid #fafef6;
+    background: #ff002e;
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px 15px;
+    transition: all 150ms linear;
+}
+.cart-table-foot-btn:hover {
+    border: 2px solid transparent;
+}
+.cart-table-foot-btn:active {
+    background: rgba(0,0,0, 0.3);
+}
+.cart-table-foot-title {
+  font-weight: bold;
+}

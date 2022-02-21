@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Neonderthaw&display=swap');
+.modal-bg {
+    background: none!important;
+}
+.meal-card {
+    position: relative;
+    margin-bottom: 30px;
+    background: #ffc025;
+    color: #fafef6;
+    height: 95%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 19px 38px, rgba(0, 0, 0, 0.22) 0 15px 12px;
+    transition: .4s linear;
+}
+.meal-card:hover {
+    box-shadow: none;
+}
+.meal-card-title {
+    height: 85px;
+    padding: 10px 15px;
+    font-family: 'Lobster', cursive;
+    font-size: 22px;
+    color: #fafef6;
+    transition: .4s linear;
+}
+.meal-card-title:hover {
+    color: black;
+}
+/*.meal-card-title:after {*/
+/*    content: '';*/
+/*    background: #fafef6;*/
+/*    flex-grow: 1;*/
+/*    border: 1px solid white;*/
+/*    position: absolute;*/
+/*    width: 80px;*/
+/*    transform: rotate(90deg);*/
+/*    bottom: 116px;*/
+/*    left: 44%;*/
+/*    z-index: 0;*/
+/*}*/
+.meal-card-price {
+    color: black;
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    padding: 0 10px;
+}
+.buttons {
+    text-align: center;
+    padding: 0 0 30px;
+}
+.meal-card-input {
+    display: inline-block;
+    text-align: center;
+    color: black;
+    background: white;
+    font-size: 25px;
+    width: 20%;
+    padding: 2px 0;
+}
+
+.meal-card-btn {
+    padding: 1px 15px;
+    text-align: center;
+    font-size: 25px;
+    border: 1px solid transparent;
+    transition: all .4s linear;
+}
+.btn-red {
+    color: white;
+    background: #e51e25;
+}
+.btn-red:hover {
+    color: #e51e25;
+    border: 1px solid #e51e25;
+    background: #fafef6;
+}
+.btn-red:active {
+    background: rgba(0,0,0,0.5);
+}
+.btn-green {
+    color: #fafef6;
+    background: #86e562;
+}
+.btn-green:hover {
+    color: #86e562;
+    border: 1px solid #86e562;
+    background: #fafef6;
+}
+.btn-green:active {
+    background: rgba(0,0,0,0.5);
+}
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+.show-img-enter {
+    opacity: 0;
+    transform: scale(0.9);
+}
+.show-img-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 300ms, transform 300ms;
+}
+.show-img-exit {
+    opacity: 1;
+}
+.show-img-exit-active {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 300ms, transform 300ms;
+}

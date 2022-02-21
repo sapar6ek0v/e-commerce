@@ -1,0 +1,40 @@
+.cart-table {
+    background: #ffc025;
+}
+.table > :not(:first-child) {
+     border-top: 2px solid white!important;
+}
+.cart-img {
+    border-radius: 8px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.cart-table-title {
+    color: #fafef6;
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+}
+.cart-table-btn {
+    margin-left: 30px;
+    padding: 1px 15px;
+    text-align: center;
+    /*border: none;*/
+    font-size: 25px;
+    background: #e51b24;
+    color: #fafef6;
+    transition: all 150ms linear;
+    border: 1px solid transparent;
+}
+.cart-table-btn:hover {
+    border: 1px solid #e51b24;
+    background: #fafef6;
+    color: #e51b24;
+}
+.cart-table-btn:active {
+    background: rgba(0,0,0, 0.2);
+}
+.cart-table-price {
+    color: #fafef6;
+    font-size: 20px;
+    font-weight: bolder;
+}
