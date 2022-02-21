@@ -13,3 +13,18 @@
     opacity: 0;
     transform: translateX(-100px);
 }
+
+
+.modal-title {
+    padding: 20px;
+    color: #E1332D;
+}
+
+.close-btn {
+    position: relative;
+    top: -105px;
+    left: -20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}

@@ -31,9 +31,9 @@ const ModalAlert = ({modalIsOpen, setIsOpen, title}) => {
                 closeTimeoutMS={500}
                 contentLabel="Example Modal"
             >
-                <div className='p-4'>
-                    <h2>{title}</h2>
-                    <button onClick={closeModal}>X</button>
+                <div className=' modal-block'>
+                    <h2 className='modal-title'>{title}</h2>
+                    <button className='close-btn' onClick={closeModal}>X</button>
                 </div>
             </Modal>
         </div>

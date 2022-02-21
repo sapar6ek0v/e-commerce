@@ -41,15 +41,17 @@ export const deleteProduct = (req, res) => {
     Product.findByIdAndDelete(id, (error, product) => {
         if (error) res.status(400).json({message: " not delete", error})
 
+        console.log(product.imageId)
 
-        try  {
+        // try  {
             // const imageName = product.image.replace('/static/', '')
             // if (imageName !== 'no_image.jpg') unlinkSync(path.resolve(`images/${imageName}`))
+        // } catch (e) {
+        //     console.log("File not found", e)
+        // }
 
-            deleteImageFromCloud(product.imageId)
-        } catch (e) {
-            console.log("File not found", e)
-        }
+        deleteImageFromCloud(product.imageId)
+
 
         Comment.deleteMany({product : product._id}, (error) => {
             if (error) res.status(400).json({message: " not delete comment", error})

@@ -22,6 +22,8 @@ const AdminPage = () => {
         axios.post('https://api.cloudinary.com/v1_1/dzfibdx5d/image/upload', image)
             .then(({data: cloudinary}) => {
 
+                console.log(cloudinary)
+                console.log(cloudinary.public_id)
 
                 const product = {
                     title: data.title,

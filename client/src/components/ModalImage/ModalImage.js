@@ -5,7 +5,7 @@ const ModalImage = ({setShowImage, food}) => {
     return (
         <div onClick={() => setShowImage(false)} className='modal-bg'>
             <div className='d-flex justify-content-center align-items-center h-100'>
-                <img src={food.image} alt={food.title}/>
+                <img className='modal-img' src={food.image} alt={food.title}/>
             </div>
         </div>
     );
