@@ -33,3 +33,35 @@
 .cart-table-foot-title {
   font-weight: bold;
 }
+
+.to-payment {
+    background: #68d14d;
+    border: 1px solid transparent;
+    color: #fafef6;
+    font-size: 18px;
+    padding: 4px 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: .2s linear;
+}
+
+.to-payment:hover {
+    background: #fafef6;
+    border: 1px solid #82d16d;
+    color: #82d16d;
+}
+
+.to-payment:active {
+    background: rgba(0,0,0,0.7);
+}
+
+.to-payment-icon {
+    opacity: 0;
+    transition: .2s linear;
+}
+
+.to-payment-icon:hover {
+    opacity: 1;
+    padding-left: 10px;
+    color: #82d16d;
+}

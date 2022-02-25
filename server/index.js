@@ -10,6 +10,7 @@ import userRouter from './routes/authRoutes.js'
 import jwtStrategy from "./services/passport.js";
 import productRouter from "./routes/productRoutes.js";
 import commentRouter from './routes/commentRoutes.js'
+import paymentRouter from './routes/stripeRoutes.js'
 
 dotenv.config()
 dbConnect()
@@ -26,6 +27,7 @@ passport.use('jwt', jwtStrategy)
 server.use('/api/v1/auth', userRouter)
 server.use('/api/v1/products', productRouter)
 server.use('/api/v1/comments', commentRouter)
+server.use('/api/v1/payment', paymentRouter)
 
 server.use('/static', express.static('images'))
 

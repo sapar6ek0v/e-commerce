@@ -24,7 +24,7 @@ const MealCard = ({food, count}) => {
                         <div className='d-flex align-items-center justify-content-between'>
                             <div className='d-flex align-items-center'>
                                 <div className='meal-card-title'>{
-                                    <Link to={`/product/${food._id}`} className='text-decoration-none meal-card-title'>{food.title}</Link>
+                                    <Link to={`/product/${food._id}`} className='meal-card-subtitle'>{food.title}</Link>
                                 }</div>
                             </div>
                             <div className='meal-card-price'>

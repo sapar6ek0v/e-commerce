@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Link, useNavigate} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import './Header.css'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBars} from "@fortawesome/free-solid-svg-icons";
@@ -13,9 +13,6 @@ const Header = () => {
     const {user, isAuth} = useSelector(s => s.auth)
     const [showButtons, setShowButtons] = useState(false)
 
-    const onClick = () => {
-        navigate(`/cart-meals`)
-    }
 
     return (
         <>
@@ -23,9 +20,9 @@ const Header = () => {
                 <div className='container d-flex py-3 justify-content-between'>
                     <div>
                         <button onClick={() => navigate('/')} className='header-btn'>Home</button>
-                        <button onClick={onClick} className='header-btn'>Cart</button>
+                        <button onClick={() => navigate(`/cart-meals`)} className='header-btn'>Cart</button>
                         {
-                            isAuth && user?.role === 'admin' && <Link className='header-btn text-decoration-none' to='/admin_page' >Add Product</Link>
+                            isAuth && user?.role === 'admin' && <button onClick={() => navigate('/admin_page')} className='header-btn'>Add Product</button>
                         }
                     </div>
                     <div className='d-flex align-items-center'>

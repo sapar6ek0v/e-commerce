@@ -17,6 +17,7 @@ import AnonymousRoute from "./components/AnonymousRoute/AnonymousRoute.js";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute.js";
 import AdminPage from "./pages/AdminPage/AdminPage.js";
 import ProductPage from "./pages/ProductPage/ProductPage.js";
+import StripePage from "./pages/StripePage/StripePage.js";
 
 
 function App() {
@@ -56,6 +57,7 @@ function App() {
                         <Route path='/' element={<Main/>}/>
                         <Route path='/cart-meals' element={<CartProductPage/>} />
                         <Route path='/product/:id' element={<ProductPage/>} />
+                        <Route path='/payment' element={<StripePage/>} />
                         <Route path='/sign_up' element={<AnonymousRoute><SignUp/></AnonymousRoute>} />
                         <Route path='/sign_in' element={<AnonymousRoute><SignIn/></AnonymousRoute>} />
                         <Route path='/admin_page' element={<PrivateRoute roles={['admin']}><AdminPage/></PrivateRoute>} />

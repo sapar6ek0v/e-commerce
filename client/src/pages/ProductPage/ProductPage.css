@@ -1,12 +1,19 @@
-.product-page {
-    background: #ffc025;
-    padding: 40px;
+.product-bg {
+    background: rgba(0,0,0,0.7) url("../../image/pexels-pixabay-326311.jpg") center/cover;
+    background-blend-mode: darken;
+    padding: 20px 0 0;
 }
 
+.product-page {
+    padding: 40px;
+}
+.product-card {
+    display: flex;
+}
 .product-img {
-    width: 350px;
+    width: 325px;
     object-fit: cover;
-    height: 490px;
+    height: 415px;
     background: #fafef6;
     border-radius: 20px;
 }
@@ -55,19 +62,29 @@
 }
 
 .product-text {
-    width: 100%;
+    width: 80%;
     border: none;
     border-radius: 8px;
     font-size: 25px;
     padding: 15px 25px;
     margin-bottom: 10px;
+    word-break: break-all;
+    overflow: auto;
 }
 
 .product-text:focus {
     outline: none;
 }
 
+.product-about {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    margin-left: 70px;
+}
 .product-comment {
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -86,4 +103,11 @@
 .comment-author {
     font-weight: bold;
     font-style: italic;
+}
+
+.comments-title {
+    padding: 40px 0 0;
+    font-style: italic;
+    font-weight: 500;
+    color: #fafef6;
 }

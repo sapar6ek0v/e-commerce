@@ -1,5 +1,3 @@
-// import {unlinkSync} from 'fs'
-// import path from "path";
 import Product from '../models/productModel.js'
 import Comment from '../models/commentModel.js'
 import deleteImageFromCloud from "../services/cloudinary.js";
@@ -7,7 +5,6 @@ import deleteImageFromCloud from "../services/cloudinary.js";
 
 export const addProduct = (req, res) => {
     const {title, description, price, image, imageId} = req.body
-    // const image = req.file ? `/static/${req.file.filename}` : '/static/no_image.jpg'
     const newProduct = new Product({title, description, price, image, imageId})
 
     newProduct.save((error, product) => {
@@ -41,17 +38,7 @@ export const deleteProduct = (req, res) => {
     Product.findByIdAndDelete(id, (error, product) => {
         if (error) res.status(400).json({message: " not delete", error})
 
-        console.log(product.imageId)
-
-        // try  {
-            // const imageName = product.image.replace('/static/', '')
-            // if (imageName !== 'no_image.jpg') unlinkSync(path.resolve(`images/${imageName}`))
-        // } catch (e) {
-        //     console.log("File not found", e)
-        // }
-
         deleteImageFromCloud(product.imageId)
-
 
         Comment.deleteMany({product : product._id}, (error) => {
             if (error) res.status(400).json({message: " not delete comment", error})

@@ -9,4 +9,5 @@ router.delete('/delete/:id', authMiddleware(['admin']), deleteProduct)
 router.get('/get', getProducts)
 router.get('/:id', getProductById)
 
+
 export default router

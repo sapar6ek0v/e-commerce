@@ -1,13 +1,21 @@
 import React from 'react';
 import {useDispatch, useSelector} from "react-redux";
+import {useNavigate} from "react-router-dom";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import ProductCart from "../../components/ProductCard/ProductCart";
 import {deleteAllCart} from "../../redux/actionCreators/productCreators.js";
 import './CartProductPage.css'
 
 const CartProductPage = () => {
     const {rates, currentRate, cart} = useSelector(s => s.products)
-
     const dispatch = useDispatch()
+    const navigate = useNavigate()
+
+
+    const payForProducts = () => {
+      navigate('/payment')
+    }
 
 
     return (
@@ -52,6 +60,14 @@ const CartProductPage = () => {
                         </table>
                         : <div className='text-center fw-bold text-uppercase '>Cart is empty</div>
                 }
+                <div className='text-end py-2'>
+                    <button onClick={payForProducts} className='to-payment'>
+                        Pay
+                        <span className='to-payment-icon'>
+                            <FontAwesomeIcon icon={faArrowRight}/>
+                        </span>
+                    </button>
+                </div>
             </div>
         </div>
     );

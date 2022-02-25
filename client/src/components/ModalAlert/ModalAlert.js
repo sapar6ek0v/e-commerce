@@ -12,7 +12,9 @@ const ModalAlert = ({modalIsOpen, setIsOpen, title}) => {
             bottom: 'auto',
             marginRight: '-50%',
             transform: 'translate(-50%, -50%)',
-            border: '1px solid #e51e25'
+            border: '1px solid rgba(0,0,0,0.9)',
+            background: `rgba(0,0,0,0.9)`,
+            backgroundBlendMode : 'darken'
         },
     };
 
@@ -28,7 +30,7 @@ const ModalAlert = ({modalIsOpen, setIsOpen, title}) => {
                 isOpen={modalIsOpen}
                 onRequestClose={closeModal}
                 style={customStyles}
-                closeTimeoutMS={500}
+                closeTimeoutMS={300}
                 contentLabel="Example Modal"
             >
                 <div className=' modal-block'>

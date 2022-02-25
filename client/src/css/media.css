@@ -1,59 +1,106 @@
 @media (max-width: 1200px) {
     .burger-menu {
-        width: 35%!important;
+        width: 35% !important;
     }
 }
 
 @media (max-width: 992px) {
     .burger-menu {
-        width: 40%!important;
+        width: 40% !important;
     }
+
     .cart-img {
         width: 85% !important;
     }
+
     .md-table {
         text-align: center;
     }
-    .meal-card-btn{
-        margin: 20px 0 ;
+
+    .meal-card-btn {
+        margin: 20px 0;
     }
+
     .cart-table-btn {
-        margin-left: 0!important;
+        margin-left: 0 !important;
     }
+
     .cart-table-price {
-        margin: 20px 0!important;
+        margin: 20px 0 !important;
+    }
+
+    .product-subtitle {
+        padding-right: 20px !important;
     }
 }
+
 @media (max-width: 768px) {
     .burger-menu {
         width: 50% !important;
     }
+
     .cart-table-btn {
         margin: 20px auto 0;
+    }
+
+    .signup-form {
+        padding: 23px;
+    }
+
+    .product-about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product-btns {
+        margin: 0 auto;
     }
 }
 
 @media (max-width: 576px) {
     .burger-menu {
-        padding: 30px 25px!important;
+        padding: 30px 25px !important;
     }
+
     .burger-menu-input {
         width: 85%;
     }
+
     .m-col {
         flex: 0 0 auto;
     }
+
     .buttons {
         padding: 0 0 20px;
     }
+
     .cart-table-btn {
         margin: 15px auto 0;
     }
+
+    .signup-form {
+        width: 450px !important;
+    }
+
+    .product-card {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-img {
+        margin-bottom: 10px;
+        width: 320px;
+        height: 350px;
+    }
+    .product-text {
+        width: 100%!important;
+    }
 }
+
 @media (max-width: 480px) {
     .meal-card-title {
         width: 140px;
     }
+
     .cart-table-btn {
         margin: 13px auto 0;
     }

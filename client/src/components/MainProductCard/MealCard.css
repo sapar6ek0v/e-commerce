@@ -26,21 +26,14 @@
     color: #fafef6;
     transition: .4s linear;
 }
-.meal-card-title:hover {
+.meal-card-title:hover, .meal-card-subtitle:hover {
     color: black;
 }
-/*.meal-card-title:after {*/
-/*    content: '';*/
-/*    background: #fafef6;*/
-/*    flex-grow: 1;*/
-/*    border: 1px solid white;*/
-/*    position: absolute;*/
-/*    width: 80px;*/
-/*    transform: rotate(90deg);*/
-/*    bottom: 116px;*/
-/*    left: 44%;*/
-/*    z-index: 0;*/
-/*}*/
+.meal-card-subtitle {
+    color: #fafef6;
+    text-decoration: none;
+    transition: .4s linear;
+}
 .meal-card-price {
     color: black;
     font-family: 'Lobster', cursive;

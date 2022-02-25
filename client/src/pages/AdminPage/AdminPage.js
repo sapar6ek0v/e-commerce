@@ -22,15 +22,13 @@ const AdminPage = () => {
         axios.post('https://api.cloudinary.com/v1_1/dzfibdx5d/image/upload', image)
             .then(({data: cloudinary}) => {
 
-                console.log(cloudinary)
-                console.log(cloudinary.public_id)
 
                 const product = {
                     title: data.title,
                     price: data.price,
                     description: data.description,
                     image: cloudinary.url,
-                    imageId : cloudinary.public_id
+                    imageId: cloudinary.public_id
                 }
                 axios.post('/api/v1/products/save', product)
                     .then(() => {
@@ -81,7 +79,7 @@ const AdminPage = () => {
             </form>
             <ModalAlert modalIsOpen={modalIsOpen} setIsOpen={setIsOpen} title={'Your product added!'}/>
         </div>
-    );
-};
+    )
+}
 
 export default AdminPage;
